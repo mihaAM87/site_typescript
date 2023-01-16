@@ -1,0 +1,60 @@
+{
+  "type": "groupTypes",
+  "contents": [
+    {
+      "id": 1,
+      "type": "group",
+      "name": "women",
+      "content": {
+        "type": "content",
+        "header": "Женщины",
+        "content": "У нас тренируются женщины",
+        "img": "women.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "type": "group",
+      "name": "beginners",
+      "content": {
+        "type": "content",
+        "header": "Новички",
+        "content": "У нас тренируются новички",
+        "img": "beginners.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "type": "group",
+      "name": "children",
+      "content": {
+        "type": "content",
+        "header": "Дети",
+        "content": "У нас тренируются дети",
+        "img": "children.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "type": "group",
+      "name": "experienced",
+      "content": {
+        "type": "content",
+        "header": "Опытные",
+        "content": "У нас тренируются опытные",
+        "img": "experienced.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "type": "group",
+      "name": "personal",
+      "content": {
+        "type": "content",
+        "header": "Персональные",
+        "content": "У нас тренируются персонально",
+        "img": "personal.jpg"
+      }
+    }
+  ]
+}

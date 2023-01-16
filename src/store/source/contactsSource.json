@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "type": "contacts",
+  "header": "контакты клуба",
+  "city": "г. Москва",
+  "area": "Московская обл.",
+  "street": "Краснодонская улица",
+  "home": 39,
+  "building": 0,
+  "undergrounds": ["Волжская", "Люблино"],
+  "emails": ["MikhailAA1@yandex.ru"],
+  "phones": ["+7 (964) 763-21-29"]
+}

@@ -1,0 +1,18 @@
+.nav {
+  flex: 1;
+}
+
+.menuRow {
+  width: 100%;
+}
+
+.mainMenu {
+  .navbar,
+  .navbar-default {
+    background: red !important; /* override background image gradient w/ flat color */
+  }
+}
+
+.navDropdown {
+  background-color: red;
+}

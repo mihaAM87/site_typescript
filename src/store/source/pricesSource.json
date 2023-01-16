@@ -1,0 +1,26 @@
+{
+  "type": "prices",
+  "header": "Стоимость тренировок",
+  "contents": [
+    {
+      "id": 1,
+      "type": "item",
+      "name": "Once",
+      "header": "Разовая",
+      "content": {
+        "conditions": "",
+        "price": 500
+      }
+    },
+    {
+      "id": 2,
+      "type": "item",
+      "name": "Month1",
+      "header": "1 месяц",
+      "content": {
+        "conditions": "3 раза в неделю",
+        "price": 4000
+      }
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "type": "schedule",
+  "header": "Расписание занятий",
+  "contents": [
+    {
+      "id": 1,
+      "type": "time",
+      "from": "07:30",
+      "to": "09:00",
+      "contents": [
+        {
+          "id": 1,
+          "type": "content",
+          "name": "Понедельник",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [2],
+                "coachesIds": [2, 3]
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "type": "content",
+          "name": "Вторник",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [1],
+                "coachesIds": [3]
+              }
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "type": "content",
+          "name": "Среда",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [2],
+                "coachesIds": [3]
+              }
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "type": "content",
+          "name": "Четверг",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [3],
+                "coachesIds": [2]
+              }
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "type": "content",
+          "name": "Пятница",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [2],
+                "coachesIds": [3]
+              }
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "type": "content",
+          "name": "Суббота",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [4],
+                "coachesIds": [1]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "time",
+      "from": "10:00",
+      "to": "11:30",
+      "contents": [
+        {
+          "id": 1,
+          "type": "content",
+          "name": "Понедельник",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [1],
+                "coachesIds": [1, 3]
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "type": "content",
+          "name": "Вторник",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [3],
+                "coachesIds": [2]
+              }
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "type": "content",
+          "name": "Среда",
+          "content": {
+            "sessions": []
+          }
+        },
+        {
+          "id": 4,
+          "type": "content",
+          "name": "Четверг",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [1],
+                "coachesIds": [1]
+              }
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "type": "content",
+          "name": "Пятница",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [1],
+                "coachesIds": [1]
+              }
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "type": "content",
+          "name": "Суббота",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [1],
+                "coachesIds": [1]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "time",
+      "from": "11:00",
+      "to": "12:30",
+      "contents": [
+        {
+          "type": "content",
+          "name": "Понедельник",
+          "id": 1,
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [1],
+                "coachesIds": [1, 3]
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "type": "content",
+          "name": "Вторник",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [3],
+                "coachesIds": [2]
+              }
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "type": "content",
+          "name": "Среда",
+          "content": {
+            "sessions": []
+          }
+        },
+        {
+          "id": 4,
+          "type": "content",
+          "name": "Четверг",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [1, 3],
+                "coachesIds": [1]
+              }
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "type": "content",
+          "name": "Пятница",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [1, 2],
+                "coachesIds": [1]
+              }
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "type": "content",
+          "name": "Суббота",
+          "content": {
+            "sessions": [
+              {
+                "id": 1,
+                "sessionsIds": [1],
+                "coachesIds": [1]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
