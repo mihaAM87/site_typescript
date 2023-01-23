@@ -8,6 +8,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/react-redux": "^7.1.24",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-router-redux": "^5.0.21",
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
@@ -16,7 +18,9 @@
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "react-service-worker": "^0.1.1",
+    "redux": "^4.2.0",
     "redux-thunk": "^2.4.2",
+    "sass": "^1.57.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

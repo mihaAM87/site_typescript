@@ -86,7 +86,7 @@ interface IScheduleSourceContentsContent {
   from: string;
   to: string;
   id: number;
-  contents: IContentsContent;
+  contents: IScheduleSourceContentsContentContents;
 }
 
 interface IScheduleSourceContents
@@ -116,5 +116,23 @@ export interface ISessionsSource
     ISource,
     {
       contents: Array<ISessionsSourceContents>;
+    }
+  > {}
+
+interface IISportTypesSourceContents
+  extends Modify<
+    IContents,
+    {
+      header: string;
+      img: string;
+      content: string;
+    }
+  > {}
+
+export interface ISportTypesSource
+  extends Modify<
+    ISource,
+    {
+      contents: Array<IISportTypesSourceContents>;
     }
   > {}
