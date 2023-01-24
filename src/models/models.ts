@@ -1,5 +1,3 @@
-import contacts from '../components/content/body/pages/contacts/contacts';
-
 type Modify<T, R> = Omit<T, keyof R> & R;
 
 interface IContentsContent {
@@ -46,7 +44,7 @@ interface IPricesSourceContentsContent {
   price: number;
 }
 
-interface IPricesSourceContents
+export interface IPricesSourceContents
   extends Modify<
     IContents,
     {
