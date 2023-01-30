@@ -26,8 +26,8 @@ export const apiSource = createApi({
         url: '../source/contactsSource.json',
       }),
     }),
-    allGroupTypesSource: build.query<IGroupTypesSource[], string>({
-      query: (search: string) => ({
+    allGroupTypesSource: build.query<IGroupTypesSource, void>({
+      query: () => ({
         url: '../source/groupTypesSource.json',
       }),
     }),
@@ -36,7 +36,7 @@ export const apiSource = createApi({
         url: '../source/pricesSource.json',
       }),
     }),
-    allScheduleSource: build.query<IScheduleSource[], void>({
+    allScheduleSource: build.query<IScheduleSource, void>({
       query: () => ({
         url: '../source/scheduleSource.json',
       }),
@@ -46,7 +46,7 @@ export const apiSource = createApi({
         url: '../source/sessionsSource.json',
       }),
     }),
-    allSportTypesSource: build.query<ISportTypesSource[], void>({
+    allSportTypesSource: build.query<ISportTypesSource, void>({
       query: () => ({
         url: '../source/sportTypesSource.json',
       }),
