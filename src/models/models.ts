@@ -3,6 +3,7 @@ type Modify<T, R> = Omit<T, keyof R> & R;
 interface IContentsContent {
   type: string;
   header: string;
+  name: string;
   content: string;
   img: string;
 }
@@ -67,34 +68,25 @@ interface IScheduleSourceISessions {
   coachesIds: Array<number>;
 }
 
-interface IScheduleSourceContentsContentContentsContent {
-  sessions: Array<IScheduleSourceISessions>;
-}
-
 interface IScheduleSourceContentsContentContents
   extends Modify<
     IContentsContent,
     {
-      contents: Array<IScheduleSourceContentsContentContentsContent>;
+      content: {
+        sessions: Array<IScheduleSourceISessions>;
+      };
     }
   > {}
 
-interface IScheduleSourceContentsContent {
+interface IScheduleSourceContents {
+  id: number;
+  header: string;
   type: string;
   from: string;
   to: string;
-  id: number;
-  contents: IScheduleSourceContentsContentContents;
-}
 
-interface IScheduleSourceContents
-  extends Modify<
-    IContents,
-    {
-      header: string;
-      content: IScheduleSourceContentsContent;
-    }
-  > {}
+  contents: Array<IScheduleSourceContentsContentContents>;
+}
 
 export interface IScheduleSource
   extends Modify<

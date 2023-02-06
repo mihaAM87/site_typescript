@@ -10,7 +10,7 @@ import { useDispatch, useStore } from 'react-redux';
 import { useAllContactsSourceQuery } from '../../../../../store/actions/source.api';
 import { useParams } from 'react-router-dom';
 
-export function Contacts() {
+export default function Contacts() {
   const { isLoading, isError, data } = useAllContactsSourceQuery();
 
   return (

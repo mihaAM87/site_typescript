@@ -8,7 +8,7 @@ import Carusel from '../../../carusel/carusel';
 import { useDispatch, useStore } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
-export function Prices() {
+export default function Prices() {
   const { isLoading, isError, data } = useAllPricesSourceQuery();
 
   const header = data?.header;
@@ -18,7 +18,7 @@ export function Prices() {
   // itemClass.push('col-md-3');
   // itemClass.push(classes.itemImg);
 
-  let pricesArr: JSX.Element[];
+  let pricesArr;
 
   if (data && data?.contents && data?.contents.length > 0) {
     pricesArr = data?.contents.map((element) => {
@@ -62,7 +62,7 @@ export function Prices() {
       <div className="conteiner">
         <div className="row">
           <h1>{header}</h1>
-          {pricesArr}
+          {pricesArr || ''}
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@ export const apiSource = createApi({
         url: '../source/scheduleSource.json',
       }),
     }),
-    allSessionsSource: build.query<ISessionsSource[], void>({
+    allSessionsSource: build.query<ISessionsSource, void>({
       query: () => ({
         url: '../source/sessionsSource.json',
       }),
