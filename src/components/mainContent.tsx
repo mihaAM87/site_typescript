@@ -7,8 +7,8 @@ import Footer from './content/footer/footer';
 import { useStore } from 'react-redux';
 
 export default function MainContent() {
-  let mainClass = [];
-  let headerClass = [];
+  let mainClass: string[] = [];
+  let headerClass: string[] = [];
 
   mainClass.push('row');
   mainClass.push(classes.mainClass);

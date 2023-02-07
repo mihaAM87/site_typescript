@@ -1,6 +1,6 @@
 import React, { useReducer, Component, useContext } from 'react';
 import PropTypes from 'prop-types';
-// import classes from './sportTypes.module.scss';
+import classes from './sportTypes.module.scss';
 import { useDispatch, useStore } from 'react-redux';
 import {
   IMG_DIRECTORY,
@@ -15,41 +15,37 @@ import { ModalContext } from '../../../../../context/modal/modalContext';
 
 export default function SportTypes() {
   const {
-    isLoading: scheduleIsLoading,
-    isError: scheduleIsError,
-    data,
+    isLoading: sportTypesIsLoading,
+    isError: sportTypesIsError,
+    data: sportTypesData,
   } = useAllSportTypesSourceQuery();
 
   const name = this.props?.params?.name;
 
   let sportTypeItem;
 
-  if (data?.contents && data?.contents.length > 0) {
-    sportTypeItem = data?.contents?.find(
+  if (sportTypesData?.contents && sportTypesData?.contents.length > 0) {
+    sportTypeItem = sportTypesData?.contents?.find(
       (item) => item.name?.toLowerCase() === name?.toLowerCase()
     );
   }
 
   // let sportTypeItem = sportTypesArr;
 
-  const navClass = [];
+  const navClass: string[] = [];
 
-  // navClass.push('text-white');
+  navClass.push('text-white');
 
   return (
     <div className="row">
       <Carusel />
       {sportTypeItem ? (
         <div className={navClass.join(' ')}>
-          <h1 className="text-black">{data?.header}</h1>
+          <h1 className="text-black">{sportTypesData?.header}</h1>
           <div className="row">
             <div className="col-8">
               <h2>{sportTypeItem.header}</h2>
-              <h3
-              // className={classes.textLeft}
-              >
-                {sportTypeItem.content}
-              </h3>
+              <h3 className={classes.textLeft}>{sportTypeItem.content}</h3>
               <button
                 type="button"
                 className="btn btn-primary btn-lg col-2"
@@ -60,9 +56,7 @@ export default function SportTypes() {
               </button>
             </div>
             <div
-              // className={`
-              // // ${classes.mainContent}
-              //  col-4`}
+              className={`${classes.mainContent} col-4`}
               style={{
                 backgroundImage:
                   'url(' +

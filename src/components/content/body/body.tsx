@@ -10,19 +10,19 @@ import Home from './pages/home/home';
 import Schedule from './pages/schedule/schedule';
 
 export default function Body() {
-  let myBody = [];
+  let myBody: string[] = [];
   myBody.push('container');
   myBody.push(classes.myBody);
 
   return (
-    <div className={myBody.push(' ')}>
+    <div className={myBody.join(' ')}>
       <Routes>
         <Route path="/sportTypes/:name" element={<SportTypes />} />
-        <Route path="/coaches" element={<Coaches />} />
+        <Route path="/coaches" element={<Coaches sportType={''} />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/prices" element={<Prices />} />
         <Route path="/contacts" element={<Contacts />} />
-        <Route path="/" exact element={<Home />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </div>
   );

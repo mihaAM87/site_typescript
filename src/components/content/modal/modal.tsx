@@ -3,15 +3,15 @@ import { Form } from 'react-bootstrap';
 import { useDispatch, useStore } from 'react-redux';
 import classes from './modal.module.scss';
 import { ModalContext } from '../../../context/modal/modalContext';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 import { AlertContext } from '../../../context/alert/alertContext';
 
 export default function Modal() {
   const store = useStore();
-  const { modal, hide } = useContext(ModalContext);
+  // const { modal, hide } = useContext(ModalContext);
   const alert = useContext(AlertContext);
 
-  const mainClasses = [];
+  const mainClasses: string[] = [];
   // mainClasses.push('row');
   mainClasses.push(classes.modal);
 
@@ -20,8 +20,8 @@ export default function Modal() {
   mainClasses.push(classes.modalDialog);
 
   const onHide = () => {
-    hide();
-    alert.hide();
+    // hide();
+    // alert.hide();
   };
 
   // c помощью useEffect цепляем обработчик к нажатию клавиш
@@ -32,13 +32,13 @@ export default function Modal() {
   // });
 
   // если компонент невидим, то не отображаем его
-  if (!modal) return null;
+  // if (!modal) return null;
 
   const sendEmail = (e) => {
     e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
 
     const target = e.target;
-    alert.hide();
+    // alert.hide();
 
     if (
       target?.from_name?.value &&

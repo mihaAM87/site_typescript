@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import { ModalContext } from '../../../../context/modal/modalContext';
 
 export default function Left() {
-  const { show } = useContext(ModalContext);
+  // const { show } = useContext(ModalContext);
 
-  const mainClass = [];
+  const mainClass: string[] = [];
 
   mainClass.push(classes.mainClass);
   mainClass.push('col-md-6 d-flex align-items-center justify-content-center');
@@ -28,7 +28,7 @@ export default function Left() {
             <button
               type="button"
               className="btn btn-warning text-white"
-              onClick={show}
+              // onClick={show}
             >
               Записаться
             </button>

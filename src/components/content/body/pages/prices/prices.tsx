@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-// import classes from './prices.module.scss';
+import classes from './prices.module.scss';
 import { connect } from 'react-redux';
 import { useAllPricesSourceQuery } from '../../../../../store/actions/source.api';
 import Card from 'react-bootstrap/Card';
@@ -9,28 +9,27 @@ import { useDispatch, useStore } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
 export default function Prices() {
-  const { isLoading, isError, data } = useAllPricesSourceQuery();
+  const {
+    isLoading: pricesIsLoading,
+    isError: pricesIsError,
+    data: pricesData,
+  } = useAllPricesSourceQuery();
 
-  const header = data?.header;
+  const header = pricesData?.header;
 
-  // const itemClass = [];
+  const itemClass: string[] = [];
 
-  // itemClass.push('col-md-3');
-  // itemClass.push(classes.itemImg);
+  itemClass.push('col-md-3');
+  itemClass.push(classes.itemImg);
 
   let pricesArr;
 
-  if (data && data?.contents && data?.contents.length > 0) {
-    pricesArr = data?.contents.map((element) => {
+  if (pricesData && pricesData?.contents && pricesData?.contents.length > 0) {
+    pricesArr = pricesData?.contents.map((element) => {
       let itemKey = Math.random();
       return (
-        <div
-          key={itemKey}
-          // className={itemClass.join(' ')}
-        >
-          <Card
-          // className={classes.itemImg}
-          >
+        <div key={itemKey} className={itemClass.join(' ')}>
+          <Card className={classes.itemImg}>
             <Card.Body>
               <Card.Title>
                 <h3>{element.header}</h3>

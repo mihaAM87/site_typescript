@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import PropTypes from 'prop-types';
-// import classes from './carusel.module.scss';
+import classes from './carusel.module.scss';
 import { connect } from 'react-redux';
 import {
   IMG_DIRECTORY,
@@ -34,9 +34,9 @@ export default function Carusel() {
         itemClasses.push('active');
       }
 
-      // itemClasses.push(classes.mainItem);
+      itemClasses.push(classes.mainItem);
 
-      // imgClasses.push(classes.mainImg);
+      imgClasses.push(classes.mainImg);
 
       let itemKey = Math.random();
 

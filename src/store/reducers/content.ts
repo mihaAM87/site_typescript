@@ -15,7 +15,7 @@ import {
 } from '../actions/content';
 
 const initialState = {
-  loading: (boolean = false),
+  loading: false,
   error: null,
   results: {},
   isFinished: false,

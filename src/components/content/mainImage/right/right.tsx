@@ -7,7 +7,7 @@ import {
 } from '../../../../store/actions/content';
 
 export default function Right() {
-  const imgClass = [];
+  const imgClass: string[] = [];
 
   imgClass.push(classes.mainImg);
 

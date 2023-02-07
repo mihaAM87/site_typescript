@@ -4,12 +4,12 @@ import Left from './left/left';
 import Right from './right/right';
 
 export default function MainImage() {
-  const rowClass = [];
+  const rowClass: string[] = [];
 
   rowClass.push('row');
   rowClass.push(classes.mainRow);
 
-  let mainClass = [];
+  let mainClass: string[] = [];
 
   mainClass.push('row');
   mainClass.push(classes.mainClass);
