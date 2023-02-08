@@ -8,7 +8,7 @@ import Modal from './components/content/modal/modal';
 import { AlertState } from './context/alert/alertState';
 import { Alert } from './components/content/alert/alert';
 
-export default function () {
+export default function App() {
   return (
     <div className="App">
       <AlertState>
