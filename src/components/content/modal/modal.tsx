@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Form } from 'react-bootstrap';
 import { useDispatch, useStore } from 'react-redux';
-import classes from './modal.module.scss';
+import './modal.module.scss';
 import { ModalContext } from '../../../context/modal/modalContext';
 // import emailjs from 'emailjs-com';
 import { AlertContext } from '../../../context/alert/alertContext';
@@ -13,11 +13,11 @@ export default function Modal() {
 
   const mainClasses: string[] = [];
   // mainClasses.push('row');
-  mainClasses.push(classes.modal);
+  mainClasses.push('modal');
 
   const modalDialogClasses = [];
   mainClasses.push('contact-form');
-  mainClasses.push(classes.modalDialog);
+  mainClasses.push('modalDialog');
 
   const onHide = () => {
     // hide();
@@ -46,21 +46,21 @@ export default function Modal() {
       ((target.from_email?.value && target?.from_email?.value.trim() != '') ||
         (target.from_phone?.value && target?.from_phone?.value.trim() != ''))
     ) {
-      emailjs
-        .sendForm(
-          'service_14jmwku',
-          'template_f31ex0a',
-          target,
-          'XYNOX-L544CmbvKdh'
-        )
-        .then(
-          (result) => {
-            window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      // emailjs
+      //   .sendForm(
+      //     'service_14jmwku',
+      //     'template_f31ex0a',
+      //     target,
+      //     'XYNOX-L544CmbvKdh'
+      //   )
+      //   .then(
+      //     (result) => {
+      //       window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+      //     },
+      //     (error) => {
+      //       console.log(error.text);
+      //     }
+      //   );
       onHide();
     } else {
       let messageTxt = '';
@@ -82,26 +82,26 @@ export default function Modal() {
         }
       }
 
-      alert.show(messageTxt, 'danger');
+      // alert.show(messageTxt, 'danger');
     }
   };
 
   // или возвращаем верстку модального окна
   return (
-    <div className={classes.modal}>
+    <div className="modal">
       <Form onSubmit={sendEmail}>
-        <div className={classes.modalDialog}>
-          <div className={classes.modalHeader}>
+        <div className="modalDialog">
+          <div className="modalHeader">
             <div>
-              <h3 className={classes.modalTitle}>Закзать</h3>
-              <h3 className={classes.modalTitle}>Звонок</h3>
+              <h3 className="modalTitle">Закзать</h3>
+              <h3 className="modalTitle">Звонок</h3>
             </div>
-            <span className={classes.modalClose} onClick={onHide}>
+            <span className="modalClose" onClick={onHide}>
               &times;
             </span>
           </div>
-          <div className={classes.modalBody}>
-            <div className={classes.modalContent}>
+          <div className="modalBody">
+            <div className="modalContent">
               <Form.Group>
                 <Form.Control
                   name="from_name"
@@ -129,7 +129,7 @@ export default function Modal() {
               </Form.Group>
             </div>
           </div>
-          <div className={classes.modalFooter}>
+          <div className="modalFooter">
             <div className="col-md-6">
               <button className="form-control btn btn-success" type="submit">
                 Записаться

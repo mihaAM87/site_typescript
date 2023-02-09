@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.module.scss';
-import App from './App';
 import { Provider } from 'react-redux';
+import ReactDOM from 'react-dom/client';
 import registerServiceWorker from 'react-service-worker';
 import { store } from './store';
+import App from './App';
 
-const root = ReactDOM.createRoot(
+const root: ReactDOM.Root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import classes from './left.module.scss';
+import './left.module.scss';
 import { Link } from 'react-router-dom';
 import { ModalContext } from '../../../../context/modal/modalContext';
 
@@ -8,7 +8,7 @@ export default function Left() {
 
   const mainClass: string[] = [];
 
-  mainClass.push(classes.mainClass);
+  mainClass.push('mainClass');
   mainClass.push('col-md-6 d-flex align-items-center justify-content-center');
 
   return (

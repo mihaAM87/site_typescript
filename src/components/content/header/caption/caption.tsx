@@ -1,5 +1,5 @@
 import React, { useContext, Component } from 'react';
-import classes from './caption.module.scss';
+import './caption.module.scss';
 import { NavbarBrand } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import {
@@ -24,7 +24,7 @@ export default function Caption() {
   let mainClass: string[] = [];
 
   mainClass.push('row');
-  mainClass.push(classes.mainClass);
+  mainClass.push('mainClass');
 
   return (
     <div className={mainClass.join(' ')}>
@@ -44,7 +44,7 @@ export default function Caption() {
             <img
               alt="Знак метрополитена"
               src={IMG_DIRECTORY + MAIN_IMGES_DIR + METRO_IMG}
-              className={classes.metroImg}
+              className="metroImg"
             ></img>
             <span>
               {contactsData?.city}, {contactsData?.street}, {contactsData?.home}

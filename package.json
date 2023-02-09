@@ -20,7 +20,6 @@
     "react-service-worker": "^0.1.1",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.2",
-    "sass": "^1.57.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -51,6 +50,8 @@
     "@types/node-sass": "^4.11.3",
     "node-sass": "^8.0.0",
     "npm-run-all": "^4.1.5",
-    "typescript": "^4.9.4"
+    "sass": "^1.58.0",
+    "typescript": "^4.9.4",
+    "typescript-plugin-css-modules": "^4.1.1"
   }
 }

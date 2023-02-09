@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classes from './contacts.module.scss';
+import './contacts.module.scss';
 import { connect } from 'react-redux';
 import {
   METRO_IMG,
@@ -27,7 +27,7 @@ export default function Contacts() {
             <img
               alt="Знак Метрополитена"
               src={IMG_DIRECTORY + MAIN_IMGES_DIR + METRO_IMG}
-              className={classes.metroImg}
+              className="metroImg"
             ></img>
             <strong>
               {contactsData?.city}, {contactsData?.street}, {contactsData?.home}

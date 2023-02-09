@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classes from './prices.module.scss';
+import './prices.module.scss';
 import { connect } from 'react-redux';
 import { useAllPricesSourceQuery } from '../../../../../store/actions/source.api';
 import Card from 'react-bootstrap/Card';
@@ -20,7 +20,7 @@ export default function Prices() {
   const itemClass: string[] = [];
 
   itemClass.push('col-md-3');
-  itemClass.push(classes.itemImg);
+  itemClass.push('itemImg');
 
   let pricesArr;
 
@@ -29,7 +29,7 @@ export default function Prices() {
       let itemKey = Math.random();
       return (
         <div key={itemKey} className={itemClass.join(' ')}>
-          <Card className={classes.itemImg}>
+          <Card className="itemImg">
             <Card.Body>
               <Card.Title>
                 <h3>{element.header}</h3>

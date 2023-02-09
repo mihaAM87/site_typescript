@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import classes from './body.module.scss';
+import './body.module.scss';
 import { connect } from 'react-redux';
 import SportTypes from './pages/sportTypes/sportTypes';
 import Coaches from './pages/coaches/coaches';
@@ -12,7 +12,7 @@ import Schedule from './pages/schedule/schedule';
 export default function Body() {
   let myBody: string[] = [];
   myBody.push('container');
-  myBody.push(classes.myBody);
+  myBody.push('myBody');
 
   return (
     <div className={myBody.join(' ')}>

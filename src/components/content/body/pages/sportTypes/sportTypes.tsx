@@ -1,6 +1,6 @@
 import React, { useReducer, Component, useContext } from 'react';
 import PropTypes from 'prop-types';
-import classes from './sportTypes.module.scss';
+import './sportTypes.module.scss';
 import { useDispatch, useStore } from 'react-redux';
 import {
   IMG_DIRECTORY,
@@ -45,7 +45,7 @@ export default function SportTypes() {
           <div className="row">
             <div className="col-8">
               <h2>{sportTypeItem.header}</h2>
-              <h3 className={classes.textLeft}>{sportTypeItem.content}</h3>
+              <h3 className="textLeft">{sportTypeItem.content}</h3>
               <button
                 type="button"
                 className="btn btn-primary btn-lg col-2"
@@ -56,7 +56,7 @@ export default function SportTypes() {
               </button>
             </div>
             <div
-              className={`${classes.mainContent} col-4`}
+              className={`mainContent col-4`}
               style={{
                 backgroundImage:
                   'url(' +

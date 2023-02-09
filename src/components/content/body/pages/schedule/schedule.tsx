@@ -1,5 +1,5 @@
 import React, { Component, useReducer } from 'react';
-import classes from './schedule.module.scss';
+import './schedule.module.scss';
 import { useDispatch, useStore } from 'react-redux';
 import {
   useAllScheduleSourceQuery,
@@ -87,7 +87,7 @@ export default function Schedule() {
       <div>
         <h1 className={navClass.join(' ')}>{scheduleData?.header}</h1>
         <div className="row">
-          <Table striped bordered hover className={classes.mainTable}>
+          <Table striped bordered hover className="mainTable">
             <thead>
               <tr>
                 <th>Время</th>

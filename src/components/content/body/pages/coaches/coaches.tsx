@@ -6,7 +6,7 @@ import {
 import { useAllCoachesQuery } from '../../../../../store/actions/source.api';
 import Card from 'react-bootstrap/Card';
 import Carusel from '../../../carusel/carusel';
-import classes from './coaches.module.scss';
+import './coaches.module.scss';
 import { useDispatch, useStore } from 'react-redux';
 import { ModalContext } from '../../../../../context/modal/modalContext';
 import { useParams } from 'react-router-dom';
@@ -26,7 +26,7 @@ export default function Coaches({ sportType: string }) {
   const mainDiv: string[] = [];
 
   mainDiv.push('container');
-  mainDiv.push(classes.mainDiv);
+  mainDiv.push('mainDiv');
 
   itemClass.push('col-md-4');
 

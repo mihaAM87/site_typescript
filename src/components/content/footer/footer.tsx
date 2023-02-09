@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classes from './footer.module.scss';
+import './footer.module.scss';
 import { useDispatch, useStore } from 'react-redux';
 import { useAllContactsSourceQuery } from '../../../store/actions/source.api';
 import { useParams } from 'react-router-dom';
@@ -15,13 +15,13 @@ export default function Footer() {
   const mainClass: string[] = [];
 
   mainClass.push('container');
-  mainClass.push(classes.blackBackground);
-  mainClass.push(classes.whiteColor);
+  mainClass.push('blackBackground');
+  mainClass.push('whiteColor');
   return (
     <div className={mainClass.join(' ')}>
       <h4>{contactsData?.phones?.join(', ')}</h4>
       <h5>
-        <span className={classes.redColor}>Тренировка</span> (с) 2022. Все права
+        <span className="redColor">Тренировка</span> (с) 2022. Все права
         защищены.
       </h5>
     </div>

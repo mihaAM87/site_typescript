@@ -3,7 +3,7 @@ import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { NavLink, Link } from 'react-router-dom';
 import { useAllSportTypesSourceQuery } from '../../../../store/actions/source.api';
 import { useDispatch, useStore } from 'react-redux';
-import classes from './myMenu.module.scss';
+import './myMenu.module.scss';
 import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -44,7 +44,7 @@ export default function MyMenu() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
           <Nav
-            className={`me-auto justify-content-between nav ${classes.nav} bg-danger text-white`}
+            className={`me-auto justify-content-between nav bg-danger text-white`}
             // justify="true"
           >
             <NavDropdown title="Виды спорта" id="basic-nav-dropdown">

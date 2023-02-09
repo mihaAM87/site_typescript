@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classes from './right.module.scss';
+import './right.module.scss';
 import {
   MAIN_IMG,
   IMG_DIRECTORY,
@@ -9,7 +9,7 @@ import {
 export default function Right() {
   const imgClass: string[] = [];
 
-  imgClass.push(classes.mainImg);
+  imgClass.push('mainImg');
 
   imgClass.push('row');
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-//import 'react-select/dist/react-select.css'
+import 'react-select/dist/react-select.css';
 import MainContent from './components/mainContent';
-import './App.scss';
+import './App.module.scss';
 import { BrowserRouter } from 'react-router-dom';
 import { ModalState } from './context/modal/ModalState';
 import Modal from './components/content/modal/modal';

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './mainContent.module.scss';
+import './mainContent.module.scss';
 import Header from './content/header/header';
 import MainImage from './content/mainImage/mainImage';
 import Body from './content/body/body';
@@ -11,10 +11,10 @@ export default function MainContent() {
   let headerClass: string[] = [];
 
   mainClass.push('row');
-  mainClass.push(classes.mainClass);
+  mainClass.push('mainClass');
 
   headerClass.push('row');
-  headerClass.push(classes.headerClass);
+  headerClass.push('headerClass');
 
   return (
     <div className="row">
